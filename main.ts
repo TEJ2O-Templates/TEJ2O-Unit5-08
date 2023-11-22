@@ -10,12 +10,11 @@
 basic.showIcon(IconNames.Happy)
 
 // loop forever
-while (true){
+while (true) {
   if (input.buttonIsPressed(Button.A) == true) {
     // turn the motor 180 degrees
     basic.showIcon(IconNames.Yes)
     robotbit.StepperTurn(robotbit.Steppers.M1, robotbit.Turns.T1B0)
-    basic.pause(100)
     basic.showIcon(IconNames.Happy)
   }
 
@@ -25,6 +24,6 @@ while (true){
     robotbit.StpCarMove(10, 48)
     basic.pause(500)
     robotbit.StpCarMove(-10, 48)
-    basic.showIcon(IconNames.Sad)
+    basic.showIcon(IconNames.Happy)
   }
 }
